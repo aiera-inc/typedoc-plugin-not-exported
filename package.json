@@ -28,15 +28,12 @@
     "export",
     "include"
   ],
-  "author": "Tom Chen <tomchen.org@gmail.com>",
-  "license": "CC0-1.0",
-  "homepage": "https://github.com/tomchen/typedoc-plugin-not-exported",
+  "author": "Aiera, Inc.",
+  "license": "MIT",
+  "homepage": "https://github.com/aiera-inc/typedoc-plugin-not-exported.git",
   "repository": {
     "type": "git",
-    "url": "git@github.com:tomchen/typedoc-plugin-not-exported.git"
-  },
-  "bugs": {
-    "url": "https://github.com/tomchen/typedoc-plugin-not-exported/issues"
+    "url": "git@github.com:aiera-inc/typedoc-plugin-not-exported.git"
   },
   "peerDependencies": {
     "typedoc": ">=0.20.16"
@@ -54,7 +51,7 @@
     "rimraf": "^3.0.2",
     "ts-jest": "^26.5.1",
     "ts-loader": "^8.0.17",
-    "typedoc": "0.20.24",
+    "typedoc": "^0.20.24",
     "typescript": "^4.1.5"
   }
 }
