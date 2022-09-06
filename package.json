@@ -4,12 +4,13 @@
   "description": "TypeDoc plugin that forces inclusion of non-exported symbols (variables)",
   "main": "dist/main.js",
   "scripts": {
+    "addscope": "node tools/packagejson name @tomchen/typedoc-plugin-not-exported",
     "build": "rimraf dist && tsc",
+    "prepare": "npm run build",
     "test": "npm run build && npm run test:gen && npm run test:jest && npm run test:cleanup",
     "test:cleanup": "rimraf test/docs test/docs2",
     "test:gen": "npm run test:cleanup && typedoc --options test/typedoc.json && typedoc --options test/typedoc2.json",
-    "test:jest": "jest --no-cache --runInBand",
-    "addscope": "node tools/packagejson name @tomchen/typedoc-plugin-not-exported"
+    "test:jest": "jest --no-cache --runInBand"
   },
   "publishConfig": {
     "access": "public"
